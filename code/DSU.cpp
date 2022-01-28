@@ -18,8 +18,8 @@ int find(int v){
 }
 
 void Union(int a,int b){
-   a = parent[a];
-   b = parent[b];
+   a = find(a);
+   b = find(b);
    if(a!=b){
        //optimization by union of size
        if(size[a]<size[b]) swap(a,b);

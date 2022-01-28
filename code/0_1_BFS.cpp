@@ -30,7 +30,7 @@ void BFS(int source){
 int main(){
     int n,m;
     cin>>n>>m;
-    //Weight of the edged must be either 0 or 1
+    //Weight of the edges must be either 0 or 1
     for(int i=0 ; i<m ; i++){
         int x,y,wt;cin>>x>>y>>wt;
         graph[x].push_back({y,wt});
